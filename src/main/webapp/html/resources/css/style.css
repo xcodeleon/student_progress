@@ -1,80 +1,94 @@
-@font-face {
-    src: url("../fonts/Merriweather/Merriweather-BlackItalic.ttf") format("ttf");
-    src: local('Merriweather-BlackItalic');
-    font-family: 'Merriweather', serif;
+.logout {
+    float: right;
+    margin-top: 10px;
 }
 
-.header {
-    word-spacing: 800px;
-    width: 1000px;
-    background-color: lightgreen;
-    height: 30px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 17px;
-    border-radius: 7px;
-    text-decoration: none;
-    font-family: 'Merriweather-BlackItalic'
-}
-
-.title_header {
-    font-size: 15px;
-    width: 700px;
-    height: 60px;
-    background-color: khaki;
-    text-align: center;
-    border: 1px solid #000;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    border-radius: 8px;
-    margin-top: 50px;
-    -webkit-align-content: center;
-}
-
-.h1_title {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 25px;
-    text-decoration: none;
-}
-
-.a_href {
-    border: 1px solid #333;
+.at_main {
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+    word-spacing: 18px;
     display: inline-block;
-    padding: 5px 15px;
-    text-decoration: none;
-    color: #000;
-    border-radius: 3px;
+    width: 200px;
+    height: 20px;
+}
+.header_std_create{
+    text-align: center;
+    margin-left: 30px;
+
+}
+.wrap_std_create{
+    width: 100%;
+    height: 35px;
+    margin-top: 30px;
+    top: 20px;
 }
 
-.a_href:hover {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(to bottom, #fcfff4, #e9e9ce);
-    color: #aa0000;
+.nav_main {
+    width: 800px;
+    text-align: center;
+    word-spacing: 266px;
+    color: blue;
+    margin: 50px auto;
 }
 
 .nav_students {
+    width: 800px;
+    font-size: 16px;
     text-align: center;
-    margin-top: 17px;
+    height: 70px;
+    margin: 50px auto;
+}
+
+.block_std {
+    float: left; /*Задаем обтекание*/
+    line-height: 18px; /*Высота строки +  верт. центрирования текста*/
+    font-size: 16px;
+    background: #cccccc;
+    width: 300px; /*Фиксируем ширину блока*/
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center; /*Центрируем текст по горизонтали*/
 
 }
 
-.nav_title {
+
+.std_list_table {
+    border: 1px solid gray;
+    width: 800px;
+    font-size: 16px;
+    margin: 50px auto;
+
+}
+
+.thead {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 18px;
-    word-spacing: 70px;
-    margin-top: 17px;
+    background-color: #cccccc;
+}
+
+td, th, tr {
+    border: 1px solid grey;
+    text-align: center;
+}
+
+.header {
+    width: 800px;
+    background-color: #ffffff;
+    height: 50px;
+    margin: 8px auto;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+a {
     text-decoration: none;
 }
 
-
-.body {
-    font-family: 'Merriweather-Regular';
-    font-family: 'Merriweather-BlackItalic';
+body {
+    width: 1250px;
+    margin: 0 auto;
+    background-color: #eeeeee;
+    font-family: "Comic Sans MS";
 }

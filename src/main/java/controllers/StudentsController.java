@@ -8,11 +8,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
-@WebServlet(name = "StudentsController", urlPatterns = "/students")
+@WebServlet(name = "StudentsController", urlPatterns = "/students_list")
     public class StudentsController extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/WEB-INF/jsp/students.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/jsp/students_list.jsp").forward(req, resp);
     }
 }
 

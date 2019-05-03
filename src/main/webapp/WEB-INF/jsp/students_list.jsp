@@ -1,21 +1,23 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/html/resources/css/style.css">
     <title>Студенты</title>
-    <link rel="stylesheet" href="../css/style.css">
+
 </head>
 <body>
 <div class="header">
     <p>Система управления студентами и их успеваемостью</p>
 </div>
-<div class="at_main"><a href="index.html">Главная</a>
+<div class="at_main"><a href="index.jsp">Главная</a>
 </div>
 
 <div class="nav_students">
     <div class="block_std"><a href="#">Посмотреть успеваемость выбранных студентов</a></div>
     <div class="block_std"><a href="student_create.html">Создать студента</a></div>
-    <div class="block_std"><a href="#">Модифицировать выбранного студента</a></div>
+    <div class="block_std"><a href="students_mdf.html">Модифицировать выбранного студента</a></div>
     <div class="block_std"><a href="#">Удалить выбранных студентов</a></div>
 </div>
 

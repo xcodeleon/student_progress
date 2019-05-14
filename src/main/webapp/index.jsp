@@ -17,9 +17,9 @@
 
 
 <nav class="nav_main">
-    <a class="a_href" href="/WEB-INF/jsp/students_list.jsp">Студенты</a>
-    <a class="a_href" href="/WEB-INF/jsp/disciplines_list.jsp">Дисциплины</a>
-    <a class="a_href" href="/WEB-INF/jsp/terms_list.jsp">Семестры</a>
+    <a class="a_href" href="/students">Студенты</a>
+    <a class="a_href" href="/disciplines">Дисциплины</a>
+    <a class="a_href" href="/terms">Семестры</a>
 </nav>
 
 

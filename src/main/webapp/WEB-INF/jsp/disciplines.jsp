@@ -6,6 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page isELIgnored ="false" %>
 
 
 <!DOCTYPE html>
@@ -14,7 +16,7 @@
     <meta charset="UTF-8">
     <title>Список дисциплин</title>
     <link rel="stylesheet" href="html/resources/css/style.css" type='text/css' media='all'/>
-    <script src="../../resources/js/functions.js"></script>
+    <script src="html/resources/js/functions.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 
@@ -33,46 +35,35 @@
     <table class="main-info-table ">
         <tr>
 
+            <th class="checkbox-narrow"></th>
+
             <th>Наименование дисциплины</th>
         </tr>
 
-
-        <tr>
-
-            <td>История науки и техники</td>
-        </tr>
-
-        <tr>
-
-            <td>Стохастика</td>
-        </tr>
-
-        <tr>
-
-            <td>??????????? !!!!</td>
-        </tr>
-
-        <tr>
-
-            <td>Теория Алгоритмизации</td>
-        </tr>
-
-        <tr>
-
-            <td>Анализ</td>
-        </tr>
+        <c:forEach items="${list}" var="d">
+            <tr>
+                <td class="aling-right"><input type="checkbox" value="2" id="2"></td>
+                <td>${d.discipline}</td>
+            </tr>
+        </c:forEach>
 
 
     </table>
     <div>
         <form action="/discipline-create" method="get">
 
+            <input type="submit" value="Создать дисциплину..." class="big-button">
+
         </form>
 
+
+        <input type="submit" value="Модифицировать дисциплину..." class="big-button" onclick="modifyDiscipline()">
 
         <form action="/discipline-modify" , method="get" id="discipline-modify-form">
             <input type="hidden" name="selectedId" id="selectedId">
         </form>
+
+        <input type="submit" value="Удалить дисциплину" class="big-button" onclick="deleteDiscipline()">
 
     </div>
     <form action="/discipline-delete" method="post" id="delete-discipline-form">

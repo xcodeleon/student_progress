@@ -2,14 +2,15 @@ package entity;
 
 public class Discipline {
     private int id;
-    private String dsc_name;
+    private String discipline;
+    private String status;
 
-    public Discipline(int id, String dsc_name) {
-        this.id = id;
-        this.dsc_name = dsc_name;
+    public Discipline() {
     }
-    public Discipline(){
 
+    public Discipline(int id, String discipline) {
+        this.id = id;
+        this.discipline = discipline;
     }
 
     public int getId() {
@@ -20,19 +21,19 @@ public class Discipline {
         this.id = id;
     }
 
-    public String getDsc_name() {
-        return dsc_name;
+    public String getDiscipline() {
+        return discipline;
     }
 
-    public void setDsc_name(String dsc_name) {
-        this.dsc_name = dsc_name;
+    public void setDiscipline(String discipline) {
+        this.discipline = discipline;
     }
 
     @Override
     public String toString() {
         return "Discipline{" +
                 "id=" + id +
-                ", dsc_name='" + dsc_name + '\'' +
+                ", discipline='" + discipline + '\'' +
                 '}';
     }
 }

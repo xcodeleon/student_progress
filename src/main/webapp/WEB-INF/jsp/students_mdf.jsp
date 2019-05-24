@@ -16,7 +16,7 @@
     <div class="main_nav1">Для модификации, введите новые значения и нажмите "Применить"</div>
 </div>
 <div class="edit_field_std">
-    <form action="../../html/index.html" method="POST" enctype="application/x-www-form-urlencoded">
+    <form action="/" method="POST" enctype="application/x-www-form-urlencoded">
         <label>Фамилия<input type="text" name="Фамилия"></label>
         <label>Имя<input type="text" name="Имя"></label>
         <label>Отчество<input type="text" name="Отчество"></label>

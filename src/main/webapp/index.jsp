@@ -1,26 +1,25 @@
-<%@page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
+<%@page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8" %>
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Главная</title>
-    <link rel="stylesheet" href="html/resources/css/style.css">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="html/resources/css/style.css" type='text/css' media='all'/>
 </head>
-<body class="body">
+<body>
+<h1>Система управления студентами и их успеваемостью</h1>
 
-<div class="header">
-    <p>Система управления студентами и их успеваемостью</p>
+
+<a href="/registration-form" class="logout-link">Login</a>
+
+
+<div id="title-links">
+    <a href="/students">Студенты</a>
+    <a href="/disciplines">Дисциплины</a>
+    <a href="/terms">Семестры</a>
 </div>
-
-<div class="logout"><a href="#">Logout</a>
-</div>
-
-
-<nav class="nav_main">
-    <a class="a_href" href="/students">Студенты</a>
-    <a class="a_href" href="/disciplines">Дисциплины</a>
-    <a class="a_href" href="/terms">Семестры</a>
-</nav>
 
 
 </body>
